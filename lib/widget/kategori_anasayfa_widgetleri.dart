@@ -20,7 +20,7 @@ class CategoryHeaderWidget extends StatelessWidget {
       padding: EdgeInsets.all(5),
       decoration: BoxDecoration(
         color: category.backgroundColor,
-        borderRadius: BorderRadius.circular(1),
+        borderRadius: BorderRadius.circular(0), //butonların köşelerini ayarlamak için
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

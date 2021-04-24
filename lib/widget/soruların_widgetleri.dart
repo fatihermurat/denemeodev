@@ -3,7 +3,7 @@ import 'package:denemeodev/model/kategori.dart';
 import 'package:denemeodev/model/option.dart';
 import 'package:denemeodev/model/sorular.dart';
 import 'package:denemeodev/widget/ayarlar_widgetleri.dart';
-
+//soru şıklarının widgetleri
 class QuestionsWidget extends StatelessWidget {
   final Category category;
   final PageController controller;
@@ -34,21 +34,16 @@ class QuestionsWidget extends StatelessWidget {
     @required Question question,
   }) =>
       Container(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(1),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 32),
+            const SizedBox(height: 2),
             Text(
               question.text,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
             ),
-            SizedBox(height: 8),
-            Text(
-              'Lütfen bir seçeneğe dokununuz',
-              style: TextStyle(fontStyle: FontStyle.italic, fontSize: 16),
-            ),
-            SizedBox(height: 10),
+            SizedBox(height: 5),
             Expanded(
               child: OptionsWidget(
                 question: question,

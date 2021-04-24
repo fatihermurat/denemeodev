@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
       flexibleSpace: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.purple, Colors.cyan],
+            colors: [Colors.purple, Colors.cyan], //karmaşık renkler
             begin: Alignment.topLeft, //rengi sol tarafda göstermek için
             end: Alignment.bottomRight, //sağ kısımda daha dolgun gözükmesi için
           ),

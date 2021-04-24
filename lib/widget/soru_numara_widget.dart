@@ -15,7 +15,7 @@ class QuestionNumbersWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double padding = 16;
+    final double padding = 16;  //sayılar arasındaki boşluğu ayarlar
 
     return Container(
       height: 50,
@@ -38,7 +38,7 @@ class QuestionNumbersWidget extends StatelessWidget {
     @required int index,
     @required bool isSelected,
   }) {
-    final color = isSelected ? Colors.orange.shade300 : Colors.yellow;
+    final color = isSelected ? Colors.orange.shade300 : Colors.deepPurpleAccent;
 
     return GestureDetector(
       onTap: () => onClickedNumber(index),

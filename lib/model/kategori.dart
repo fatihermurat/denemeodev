@@ -6,9 +6,9 @@ import 'sorular.dart';
 
 class Category {
   final String categoryName;
-  final String description;
-  final Color backgroundColor;
-  final IconData icon;
+  final String description; //açıklama
+  final Color backgroundColor; //arkaplan rengi
+  final IconData icon; //logo vs ikonlar
   final List<Question> questions;
   final String imageUrl;
 

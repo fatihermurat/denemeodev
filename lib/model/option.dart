@@ -4,11 +4,11 @@ import 'package:flutter/foundation.dart';
 class Option {
   final String code;
   final String text;
-  final bool isCorrect;
+  final bool isCorrect; //doğru ve yanlışlar
 
   const Option({
-    @required this.text,
-    @required this.code,
+    @required this.text, //textler
+    @required this.code,  //kodlar
     @required this.isCorrect,
   });
 }

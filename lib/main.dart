@@ -15,14 +15,14 @@ Future main() async {
 }
 
 class Anasayfa extends StatelessWidget {
-  static final String title = 'Bisınav';
+  static final String title = 'Bisınav';  //uygulama title kısmı
 
   @override
   Widget build(BuildContext context) => MaterialApp(
     debugShowCheckedModeBanner: false,
     title: title,
     theme: ThemeData(primarySwatch: Colors.yellow),
-    home: HomePage(), // CategoryPage(category: categories.first),
+    home: HomePage(),
 
   );
 }

@@ -77,7 +77,7 @@ class OptionsWidget extends StatelessWidget {
     if (!isSelected) {
       return Colors.grey.shade200;
     } else {
-      return option.isCorrect ? Colors.green : Colors.red;
+      return option.isCorrect ? Colors.green : Colors.red; //cevaplanan sorunun doğru olunca hangi renk, yanlış olunca hangi renk yanacağını gösteriyor
     }
   }
 }

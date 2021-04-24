@@ -36,7 +36,7 @@ class CategoryDetailWidget extends StatelessWidget {
     ),
   );
 
-  Widget buildImage() => Container(
+  Widget buildImage() => Container(   //diğer kısımda bulunan butonlar
     height: 50,
     decoration: BoxDecoration(
       color: category.backgroundColor,
