@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:denemeodev/veriler/kategoriler.dart';
-import 'package:denemeodev/veriler/kullanıcı.dart';
 import 'package:denemeodev/sayfa/kategori_sayfası.dart';
 import 'package:denemeodev/widget/kategori_widgetleri.dart';
 import 'package:denemeodev/widget/kategori_anasayfa_widgetleri.dart';
@@ -14,11 +13,11 @@ class HomePage extends StatelessWidget {
       elevation: 0,
       title: Text('Sorular'),
       bottom: PreferredSize(
-        preferredSize: Size.fromHeight(80), //üst header ksımının yüksekliğini ayarlar
+        preferredSize: Size.fromHeight(20), //üst header ksımının yüksekliğini ayarlar
         child: Container(
           padding: EdgeInsets.all(16),
           alignment: Alignment.centerLeft,
-          child: buildWelcome(username),
+
         ),
       ),
       flexibleSpace: Container(
@@ -31,15 +30,13 @@ class HomePage extends StatelessWidget {
         ),
       ),
       actions: [
-        Icon(Icons.book),
-        SizedBox(width: 12),
       ],
     ),
     body: ListView(
       physics: BouncingScrollPhysics(),
       padding: const EdgeInsets.all(16),
       children: [
-        SizedBox(height: 8),
+        SizedBox(height: 1),
         buildCategories(),
         SizedBox(height: 32),
         buildPopular(context),
@@ -66,13 +63,13 @@ class HomePage extends StatelessWidget {
   );
 
   Widget buildCategories() => Container(
-    height: 300,
+    height: 1000,
     child: GridView(
-      primary: false,
+      primary: true,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 1, //sayfada kaç butonun olacağını gösterir yan yanamı alt altamı
-        childAspectRatio: 8 / 3,
-        crossAxisSpacing: 10,
+        childAspectRatio: 2 / 1,
+        crossAxisSpacing: 1,
         mainAxisSpacing: 10,
       ),
       children: kategoriler
@@ -81,12 +78,12 @@ class HomePage extends StatelessWidget {
     ),
   );
 
-  Widget buildPopular(BuildContext context) => Column(
+  Widget buildPopular(BuildContext context) => Column(  //kategori alt kısım tamamlanmadı
     children: [
       Container(
         alignment: Alignment.centerLeft,
         child: Text(
-          'Diğer',
+          '',
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
       ),

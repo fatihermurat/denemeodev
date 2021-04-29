@@ -10,7 +10,7 @@ final kategoriler = <Category>[
     questions: sorular,
     categoryName: 'Bil Bakalım',
     backgroundColor: Colors.black,
-    icon: FontAwesomeIcons.rocket,
+    icon: FontAwesomeIcons.rocket,  //
 
   ),
   Category(
@@ -20,5 +20,6 @@ final kategoriler = <Category>[
     icon: FontAwesomeIcons.book,
 
   ),
+
 
 ];

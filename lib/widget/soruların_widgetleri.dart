@@ -46,7 +46,7 @@ class QuestionsWidget extends StatelessWidget {
             SizedBox(height: 5),
             Expanded(
               child: OptionsWidget(
-                question: question,
+                soru: question,
                 onClickedOption: onClickedOption,
               ),
             ),

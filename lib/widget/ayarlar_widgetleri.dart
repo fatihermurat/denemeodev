@@ -4,12 +4,12 @@ import 'package:denemeodev/model/sorular.dart';
 import 'package:denemeodev/utils.dart';
 
 class OptionsWidget extends StatelessWidget {
-  final Question question;
+  final Question soru;
   final ValueChanged<Option> onClickedOption;
 
   const OptionsWidget({
     Key key,
-    @required this.question,
+    @required this.soru,
     @required this.onClickedOption,
   }) : super(key: key);
 
@@ -17,7 +17,7 @@ class OptionsWidget extends StatelessWidget {
   Widget build(BuildContext context) => ListView(
     physics: BouncingScrollPhysics(),
     children: Utils.heightBetween(
-      question.options
+      soru.options
           .map((option) => buildOption(context, option))
           .toList(),
       height: 8,
@@ -25,7 +25,7 @@ class OptionsWidget extends StatelessWidget {
   );
 
   Widget buildOption(BuildContext context, Option option) {
-    final color = getColorForOption(option, question);
+    final color = getColorForOption(option, soru);
 
     return GestureDetector(
       onTap: () => onClickedOption(option),
@@ -38,7 +38,7 @@ class OptionsWidget extends StatelessWidget {
         child: Column(
           children: [
             buildAnswer(option),
-            buildSolution(question.selectedOption, option),
+            buildSolution(soru.selectedOption, option),
           ],
         ),
       ),
@@ -63,7 +63,7 @@ class OptionsWidget extends StatelessWidget {
   Widget buildSolution(Option solution, Option answer) {
     if (solution == answer) {
       return Text(
-        question.solution,
+        soru.solution,
         style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
       );
     } else {
@@ -71,7 +71,7 @@ class OptionsWidget extends StatelessWidget {
     }
   }
 
-  Color getColorForOption(Option option, Question question) {
+  Color getColorForOption(Option option, Question question) {  //eğer soru doğru cevaplanırsa yeşil yanmalı yanlış cevaplanırsa kırmızı yanmalı
     final isSelected = option == question.selectedOption;
 
     if (!isSelected) {
