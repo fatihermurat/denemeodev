@@ -13,7 +13,7 @@ class CategoryHeaderWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => GestureDetector(
-    onTap: () => Navigator.of(context).push(MaterialPageRoute(
+    onTap: () => Navigator.of(context).push(MaterialPageRoute(   //kendimize özel geçiş animasyonu için kullanılır
       builder: (context) => CategoryPage(category: category),
     )),
     child: Container(

@@ -9,15 +9,15 @@ final kategoriler = <Category>[
   Category(
     questions: sorular,
     categoryName: 'Bil Bakalım',
-    backgroundColor: Colors.black,
-    icon: FontAwesomeIcons.rocket,  //
+    backgroundColor: Colors.black,  //butonların üzerindeki ikonların rengi
+    icon: FontAwesomeIcons.rocket,  //butonların üzerindeki roket ikonu
 
   ),
   Category(
     questions: hakkinda,
     categoryName: 'Hakkında',
-    backgroundColor: Colors.deepPurpleAccent,
-    icon: FontAwesomeIcons.book,
+    backgroundColor: Colors.deepPurpleAccent, //butonların üzerindeki ikon rengi
+    icon: FontAwesomeIcons.book, //butonların üzerindeki kitap ikonu
 
   ),
 

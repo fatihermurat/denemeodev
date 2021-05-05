@@ -19,7 +19,7 @@ class QuestionNumbersWidget extends StatelessWidget {
 
     return Container(
       height: 50,
-      child: ListView.separated(
+      child: ListView.separated(  //ListView içindeki öğeler arasına ayırıcılar eklemek için kullanılır.
         physics: BouncingScrollPhysics(),
         padding: EdgeInsets.symmetric(horizontal: padding),
         scrollDirection: Axis.horizontal,
@@ -42,7 +42,7 @@ class QuestionNumbersWidget extends StatelessWidget {
 
     return GestureDetector(
       onTap: () => onClickedNumber(index),
-      child: CircleAvatar(
+      child: CircleAvatar(  //Nesneyi temsil eden bir daire olarak açıklayabiliriz.
         backgroundColor: color,
         child: Text(
           '${index + 1}',

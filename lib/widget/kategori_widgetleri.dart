@@ -12,7 +12,7 @@ class CategoryDetailWidget extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) => GestureDetector(
+  Widget build(BuildContext context) => GestureDetector(  //Hareketleri algılayan bir widget. kapsadığı alanı dokunmaya duyarlı hale getirir.
     onTap: () => onSelectedCategory(category),
     child: Container(
       

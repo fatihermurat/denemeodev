@@ -6,7 +6,7 @@ class Question {
   final String text;
   final List<Option> options;
   final String solution;
-  bool isLocked;
+  bool isLocked;  //cevap şıklarında sayısal veriler için
   Option selectedOption;
 
   Question({

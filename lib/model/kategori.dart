@@ -5,12 +5,12 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'sorular.dart';
 
 class Category {
-  final String categoryName;
+  final String categoryName;  //kategori isimleri
   final String description; //açıklama
   final Color backgroundColor; //arkaplan rengi
   final IconData icon; //logo vs ikonlar
-  final List<Question> questions;
-  final String imageUrl;
+  final List<Question> questions; //sorular listesi
+  final String imageUrl; //resimler için
 
   Category({
     @required this.imageUrl,

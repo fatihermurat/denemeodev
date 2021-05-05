@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:denemeodev/model/option.dart';
 import 'package:denemeodev/model/sorular.dart';
 import 'package:denemeodev/utils.dart';
-
+//cevap şıkları
 class OptionsWidget extends StatelessWidget {
   final Question soru;
   final ValueChanged<Option> onClickedOption;
@@ -15,7 +15,6 @@ class OptionsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => ListView(
-    physics: BouncingScrollPhysics(),
     children: Utils.heightBetween(
       soru.options
           .map((option) => buildOption(context, option))
@@ -75,7 +74,7 @@ class OptionsWidget extends StatelessWidget {
     final isSelected = option == question.selectedOption;
 
     if (!isSelected) {
-      return Colors.grey.shade200;
+
     } else {
       return option.isCorrect ? Colors.green : Colors.red; //cevaplanan sorunun doğru olunca hangi renk, yanlış olunca hangi renk yanacağını gösteriyor
     }
