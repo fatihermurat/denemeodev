@@ -16,10 +16,10 @@ dependencies:
     sdk: flutter
 
   # icons
-  font_awesome_flutter: ^8.11.0  //aşağıda bulunan cupertino icons yazı tipini uygulamamıza ekler
+  font_awesome_flutter: ^8.11.0
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2  //anasayfada bulunan iki adet butona eklenen ikonlar için
+  cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
